@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<!--
+	Name:Ryan Trotter
+	Date Created: 6/18/2019
+	Most Recent Revision: 6/19/2019
+-->
+<html>
+
+	<head>
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"/>
+		
+		<script type="text/javascript" src="LuckySevens.js"></script>
+		
+		<title>Lucky Sevens</title>
+		
+		<style>
+			.center_div{
+					margin: 0 auto;
+					width:80%
+				}
+		</style>
+	</head>
+
+	<body>
+		<div class="container-fluid  col-5">
+			<header>
+				<h1><center>Lucky Sevens</center></h1>
+			</header>
+			
+			<form name="betForm" onsubmit = " return playValidation();">
+			    <div class="row justify-content-center">
+					<div class="col-sm-4">
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">$</span>
+							</div>
+							
+							<input type="number" id="inputbet" class="form-control" aria-label="Starting Bet: ">
+							
+							<div class="input-group-append">
+								<span class="input-group-text">.00</span>
+							</div>
+						
+						</div>
+						<div class = "form-group text-center">
+							<input type = "submit" value="Play">
+						</div>
+					</div>
+				</div>
+			</form>
+			
+			<br/>
+			<table name="stats">
+			<thead class="thead-dark">
+				<tr>
+				<th style ="text-align: center;">Results</th>	
+				</tr>
+			</thead>
+			<tbody>
+				<tr>				
+					<td>Starting Bet: </td>
+					<td><span id="startingBet"></span></td>
+				</tr>
+				
+				<tr>
+					<td>Total Rolls Before Goinf Broke: </td>
+					<td><span id="TotalRolls"></span></td>
+				</tr>
+				
+				<tr>
+					<td>Highest Amount Won: </td>
+					<td><span id="maxMoney"></span></td>
+				</tr>
+				
+				<tr>
+					<td> Roll Count at Highest Amount Won: </td>
+					<td><span id="highRoll"></span></td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	</body>
+
+</html>
